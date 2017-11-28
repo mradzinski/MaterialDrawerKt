@@ -49,7 +49,7 @@ class DrawerBuilderKt(val activity: Activity) : Builder {
 
     val builder = DrawerBuilder(activity)
 
-    internal fun build(): Drawer {
+    fun build(): Drawer {
         if (onDrawerListener.isInitialized) {
             builder.withOnDrawerListener(onDrawerListener)
         }
@@ -69,7 +69,7 @@ class DrawerBuilderKt(val activity: Activity) : Builder {
         return builder.build()
     }
 
-    internal fun buildForFragment(): Drawer {
+    fun buildForFragment(): Drawer {
         if (onDrawerListener.isInitialized) {
             builder.withOnDrawerListener(onDrawerListener)
         }

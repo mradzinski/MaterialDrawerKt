@@ -6,12 +6,12 @@ apply from: '../testformatter.gradle'
 ext {
     PUBLISH_GROUP_ID = 'co.zsmb'
     PUBLISH_ARTIFACT_ID = 'materialdrawer-kt'
-    PUBLISH_VERSION = '1.2.2'
+    PUBLISH_VERSION = '1.2.3'
 }
 
 android {
     compileSdkVersion 27
-    buildToolsVersion "27.0.0"
+    buildToolsVersion "27.0.1"
 
     defaultConfig {
         minSdkVersion 14
